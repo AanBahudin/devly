@@ -1,7 +1,69 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-muted-foreground: #727272;
+  --color-border: #d4d4d4;
+  --color-primary: #1b4beb;
+
+  --animate-menu-top-open: menu-top-open 0.2s forwards;
+  --animate-menu-top-close: menu-top-close 0.2s forwards;
+  --animate-menu-bottom-open: menu-bottom-open 0.2s forwards;
+  --animate-menu-bottom-close: menu-bottom-close 0.2s forwards;
+
+  @keyframes menu-top-open {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    10% {
+      transform: translateY(6px) rotate(0);
+    }
+    100% {
+      transform: translateY(6px) rotate(45deg);
+    }
+  }
+  @keyframes menu-bottom-open {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    10% {
+      transform: translateY(-6px) rotate(0);
+    }
+    100% {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+  }
+  @keyframes menu-top-close {
+    0% {
+      transform: translateY(6px) rotate(45deg);
+    }
+    75% {
+      transform: translateY(6px) rotate(0);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+  @keyframes menu-bottom-close {
+    0% {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+    75% {
+      transform: translateY(-6px) rotate(0);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
 }
