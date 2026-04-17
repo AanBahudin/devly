@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.025em;
 }
 
 html {
@@ -10,17 +12,22 @@ html {
 
 @theme {
   --font-inter: 'Inter', sans-serif;
+  
+  --text-title: 2.5rem;
+  --text-title--line-height: 2.5rem;
 
-  --color-background: #ffffff;
-  --color-foreground: #0f172a;
-  --color-muted-foreground: #727272;
-  --color-border: #d4d4d4;
-  --color-primary: #1b4beb;
+  --color-background: #f2f2f2; /* Main background */
+  --color-foreground: #0f172a; /* Primary text */
+  --color-muted-foreground: #727272; /* Secondary text  */
+  --color-muted: #e5e5e5; /* Subtle background */
+  --color-border: #d4d4d4; /* Border */
+  --color-accent: #1b4beb; /* Accent CTA */
 
   --animate-menu-top-open: menu-top-open 0.2s forwards;
   --animate-menu-top-close: menu-top-close 0.2s forwards;
   --animate-menu-bottom-open: menu-bottom-open 0.2s forwards;
   --animate-menu-bottom-close: menu-bottom-close 0.2s forwards;
+  --animate-scaling: scaling 0.8s linear infinite;
 
   @keyframes menu-top-open {
     0% {
@@ -64,6 +71,13 @@ html {
     }
     100% {
       transform: translateY(0) rotate(0);
+    }
+  }
+  @keyframes scaling {
+    75%,
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
     }
   }
 }
