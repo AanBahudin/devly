@@ -13,8 +13,8 @@ html {
 @theme {
   --font-inter: 'Inter', sans-serif;
   
-  --text-title: 2.5rem;
-  --text-title--line-height: 2.5rem;
+  --text-title: 2.75rem;
+  --text-title--line-height: 2.75rem;
 
   --color-background: #f2f2f2; /* Main background */
   --color-foreground: #0f172a; /* Primary text */
