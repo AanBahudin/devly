@@ -8,6 +8,8 @@ import cardImage1 from './assets/card-image-1.png';
 import cardImage2 from './assets/card-image-2.png';
 import cardImage3 from './assets/card-image-3.png';
 import cardImage4 from './assets/card-image-4.png';
+import chempharmLogo from './assets/chempharm-academy-logo.png';
+import devlyLogo from './assets/logo-accent.svg';
 
 const App = () => {
   return (
@@ -96,6 +98,48 @@ const App = () => {
               title="Laporan Real-time"
               description="Ubah data mentah menjadi wawasan jelas dalam hitungan detik untuk pengambilan keputusan cerdas berbasis data real-time."
               alt="card image 4"
+            />
+          </div>
+        </section>
+        <section className="flex flex-col gap-12 md:max-w-3xl lg:max-w-6xl">
+          <div className="flex flex-col gap-8">
+            <div className="w-fit px-3 py-1 border border-border rounded-r-full rounded-tl-full bg-accent/5">
+              <p className="text-sm font-medium text-accent">Our Ecosystem</p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h1 className="text-title md:text-6xl font-medium text-foreground">
+                Ekosistem Yang Tumbuh Bersama Anda
+              </h1>
+              <p className="font-medium text-muted-foreground">
+                Kami tidak hanya membangun, kami menciptakan jaringan platform
+                yang saling mendukung satu sama lain.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card
+              image={chempharmLogo}
+              title="ChemPharm Academy"
+              description="Platform pembelajaran untuk mahasiswa farmasi dan kesehatan"
+              alt="card image 21"
+            />
+            <Card
+              image={devlyLogo}
+              title="Devly Creative Lab"
+              description="Coming soon"
+              alt="card image 22"
+            />
+            <Card
+              image={devlyLogo}
+              title="Devly "
+              description="Coming soon"
+              alt="card image 22"
+            />
+            <Card
+              image={devlyLogo}
+              title="Devly Community"
+              description="Coming soon"
+              alt="card image 23"
             />
           </div>
         </section>

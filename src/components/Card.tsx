@@ -13,9 +13,9 @@ const Card = ({ image, title, description, alt, className }: CardProps) => {
     >
       <div className="relative size-full flex items-center justify-center rounded-lg backdrop-blur-lg">
         <div className="absolute size-full bg-white rounded-lg blur-[2px]" />
-        <div className="h-full p-5 flex flex-col gap-8 z-10">
+        <div className="w-full h-full p-5 flex flex-col gap-8 z-10">
           <img className="object-cover" src={image} alt={alt} />
-          <div className="flex flex-col gap-2">
+          <div className="w-full flex flex-col gap-2">
             <h1 className="text-[28px] font-medium text-foreground">{title}</h1>
             <p className="font-medium text-muted-foreground/80">
               {description}
