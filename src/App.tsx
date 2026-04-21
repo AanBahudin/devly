@@ -77,22 +77,50 @@ const App = () => {
               description="Setiap platform yang kami bangun menggunakan standar 'By Devly'
               yang memastikan keamanan, skalabilitas dan kemudahan penggunaan
               platform."
+              alt="card image 1"
             />
             <Card
               image={cardImage2}
               title="Desain Interaktif"
               description="Kami merancang desain navigasi yang intuitif, responsivitas sempurna, dan berfokus pada pengalaman pengguna."
+              alt="card image 2"
             />
             <Card
               image={cardImage3}
               title="Konsultan Strategi Produk"
               description="Kami tidak hanya mengeksekusi teknis, kami dapat membantu Anda dari validasi konsep hingga integrasi layanan sehingga tujuan utama Anda dapat tercapai."
+              alt="card image 3"
             />
             <Card
               image={cardImage4}
               title="Laporan Real-time"
               description="Ubah data mentah menjadi wawasan jelas dalam hitungan detik untuk pengambilan keputusan cerdas berbasis data real-time."
+              alt="card image 4"
             />
+          </div>
+        </section>
+        <section className="flex flex-col gap-12 md:max-w-3xl lg:max-w-6xl">
+          <div className="flex flex-col gap-8">
+            <div className="w-fit px-3 py-1 border border-border rounded-r-full rounded-tl-full bg-accent/5">
+              <p className="text-sm font-medium text-accent">About Us</p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h1 className="text-title md:text-6xl font-medium text-foreground">
+                Devly Panggungnya, Anda Bintangnya
+              </h1>
+              <p className="font-medium text-muted-foreground">
+                Devly adalah arsitek ekosistem digital yang lahir untuk
+                menjembatani jarak antara ide besar dan realitas pasar. Kami
+                tidak hanya membangun platform, kami menyusun infrastruktur yang
+                menyatukan proses belajar, pengembangan bakat, hingga peluang
+                ekonomi nyata dalam satu sistem yang mandiri.
+              </p>
+              <p className="font-medium text-muted-foreground">
+                Sebagai mitra strategis, kami memastikan bahwa setiap teknologi
+                yang kami kembangkan sepenuhnya menjadi panggung utama bagi
+                identitas dan kedaulatan brand Anda.
+              </p>
+            </div>
           </div>
         </section>
       </div>
