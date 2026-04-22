@@ -167,6 +167,36 @@ const App = () => {
             </div>
           </div>
         </section>
+        <section className="flex flex-col gap-12 mb-100 md:max-w-3xl lg:max-w-6xl">
+          <div className="flex flex-col gap-8">
+            <div className="w-fit px-3 py-1 border border-border rounded-r-full rounded-tl-full bg-accent/5">
+              <p className="text-sm font-medium text-accent">Contact</p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h1 className="text-title md:text-6xl font-medium text-foreground">
+                Siap Tumbuh Lebih Besar?
+              </h1>
+              <p className="font-medium text-muted-foreground">
+                Kami menantikan visi Anda untuk didiskusikan dan diwujudkan
+                menjadi menjadi kenyataan.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card
+              image={chempharmLogo}
+              title="Email us"
+              description="johndoe@gmail.com"
+              alt="card image 31"
+            />
+            <Card
+              image={chempharmLogo}
+              title="Phone us"
+              description="082339461068"
+              alt="card image 32"
+            />
+          </div>
+        </section>
       </div>
     </div>
   );
