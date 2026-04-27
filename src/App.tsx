@@ -1,15 +1,17 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Mail, Phone } from 'lucide-react';
 import Button from './components/Button';
 import Navbar from './components/Navbar';
+import EcosystemCard from './components/EcosystemCard';
 import heroImageBorder from './assets/hero-image-border.svg';
 import heroImageLogo from './assets/hero-image-logo.svg';
-import Card from './components/Card';
+import WhyUsCard from './components/WhyUsCard';
 import cardImage1 from './assets/card-image-1.png';
 import cardImage2 from './assets/card-image-2.png';
 import cardImage3 from './assets/card-image-3.png';
 import cardImage4 from './assets/card-image-4.png';
 import chempharmLogo from './assets/chempharm-academy-logo.png';
-import devlyLogo from './assets/logo-accent.svg';
+import devlyLogo from './assets/devly-logo.png';
+import ContactCard from './components/ContactCard';
 
 const App = () => {
   return (
@@ -73,7 +75,7 @@ const App = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card
+            <WhyUsCard
               image={cardImage1}
               title="Perlindungan Ekosistem"
               description="Setiap platform yang kami bangun menggunakan standar 'By Devly'
@@ -81,19 +83,19 @@ const App = () => {
               platform."
               alt="card image 1"
             />
-            <Card
+            <WhyUsCard
               image={cardImage2}
               title="Desain Interaktif"
               description="Kami merancang desain navigasi yang intuitif, responsivitas sempurna, dan berfokus pada pengalaman pengguna."
               alt="card image 2"
             />
-            <Card
+            <WhyUsCard
               image={cardImage3}
               title="Konsultan Strategi Produk"
               description="Kami tidak hanya mengeksekusi teknis, kami dapat membantu Anda dari validasi konsep hingga integrasi layanan sehingga tujuan utama Anda dapat tercapai."
               alt="card image 3"
             />
-            <Card
+            <WhyUsCard
               image={cardImage4}
               title="Laporan Real-time"
               description="Ubah data mentah menjadi wawasan jelas dalam hitungan detik untuk pengambilan keputusan cerdas berbasis data real-time."
@@ -116,29 +118,29 @@ const App = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <EcosystemCard
               image={chempharmLogo}
               title="ChemPharm Academy"
               description="Platform pembelajaran untuk mahasiswa farmasi dan kesehatan"
               alt="card image 21"
             />
-            <Card
+            <EcosystemCard
               image={devlyLogo}
               title="Devly Creative Lab"
-              description="Coming soon"
+              coming={true}
               alt="card image 22"
             />
-            <Card
+            <EcosystemCard
               image={devlyLogo}
-              title="Devly "
-              description="Coming soon"
+              title="Devly Project"
+              coming={true}
               alt="card image 22"
             />
-            <Card
+            <EcosystemCard
               image={devlyLogo}
               title="Devly Community"
-              description="Coming soon"
+              coming={true}
               alt="card image 23"
             />
           </div>
@@ -174,7 +176,7 @@ const App = () => {
             </div>
             <div className="flex flex-col gap-4">
               <h1 className="text-title md:text-6xl font-medium text-foreground">
-                Siap Tumbuh Lebih Besar?
+                Hubungi Tim Kami
               </h1>
               <p className="font-medium text-muted-foreground">
                 Kami menantikan visi Anda untuk didiskusikan dan diwujudkan
@@ -182,19 +184,22 @@ const App = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card
-              image={chempharmLogo}
+          <div className="grid gap-3">
+            <ContactCard
+              icon={Mail}
               title="Email us"
-              description="johndoe@gmail.com"
-              alt="card image 31"
+              subTitle="johndoe@gmail.com"
             />
-            <Card
-              image={chempharmLogo}
-              title="Phone us"
-              description="082339461068"
-              alt="card image 32"
-            />
+            <ContactCard icon={Phone} title="Call us" subTitle="080808080808" />
+          </div>
+          <div className="p-5 flex flex-col rounded-xl bg-accent">
+            <h1 className="text-3xl font-medium text-background">
+              Siap Tumbuh Lebih Besar?
+            </h1>
+            <p className="font-medium text-background">
+              Konsultasikan dan mulai langkah pertama Anda menuju ekosistem
+              tanpa batas.
+            </p>
           </div>
         </section>
       </div>
