@@ -1,4 +1,4 @@
-interface CardProps {
+interface WhyUsCardProps {
   image: string;
   title: string;
   description: string;
@@ -6,7 +6,13 @@ interface CardProps {
   className?: string;
 }
 
-const Card = ({ image, title, description, alt, className }: CardProps) => {
+const WhyUsCard = ({
+  image,
+  title,
+  description,
+  alt,
+  className,
+}: WhyUsCardProps) => {
   return (
     <div
       className={`h-full p-1 bg-background border border-border/50 rounded-xl ${className}`}
@@ -27,4 +33,4 @@ const Card = ({ image, title, description, alt, className }: CardProps) => {
   );
 };
 
-export default Card;
+export default WhyUsCard;
